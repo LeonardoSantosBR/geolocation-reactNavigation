@@ -11,8 +11,12 @@ function App(): JSX.Element {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="map" component={Map} />
-        <Tab.Screen name="chat" component={Chat} />
+        <Tab.Screen name="map" component={Map} options={{headerShown: false}} />
+        <Tab.Screen
+          name="chat"
+          component={Chat}
+          options={{headerShown: false}}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
